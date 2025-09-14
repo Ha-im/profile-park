@@ -2,102 +2,280 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+    <header>
+      <div>
+        <h1 className="park">Kyeongseon Park</h1>
+      </div>
+    </header>
+    <div className="container">
+    <main>
+      <div className="home">
+        <h2 className="home-title">Hello, I&apos;m</h2>
+        <h3 className="name">Kyeongseon</h3>
+        <div className="typetext">text</div>
+        <p className="description">배우는 것을 두려워하지 않는 신입 프론트엔드 개발자입니다. <br/>매일 조금씩 더 나은 코드를 작성하기 위해 노력하고 있습니다.</p>
+        <div>
+          <button className="project-btn">Project</button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="scroll-indicator"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fafafa"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></div>
+      </div>
+      <div className="about">
+        <h2 className="about-title">About Me</h2>
+        <div>
+          <h4>Frontend Developer</h4>
+          <p>프론트엔드 개발의 기초부터 최신 프레임워크까지 체계적으로 학습해온 예비 개발자입니다.<br/>배운 지식을 실무에 적용하며 사용자 중심의 웹 경험을 만들어가고 싶습니다.</p>
+        </div>
+        <div>
+          <div>
+            <p>HTML</p>
+          </div>
+          <div>
+            <p>CSS</p>
+          </div>
+          <div>
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <p>React</p>
+          </div>
+          <div>
+            <p>Vite</p>
+          </div>
+          <div>
+            <p>BootStrap</p>
+          </div>
+        </div>
+        <div>
+          <Image src="" alt=""/>
+          <h4>Web Development</h4>
+          <p>반응형 웹 사이트 제작 학습중</p>
+        </div>
+        <div>
+          <Image src="" alt=""/>
+          <h4>Team Collaboration</h4>
+          <p>소통과 협업을 중시</p>
+        </div>
+      </div>
+      <div className="skills">
+        <h2 className="skills-title">Skills</h2>
+        <div>
+          <div>
+            <Image src="" alt=""/>
+            <h3>HTML</h3>
+          </div>
+          <div className="progressbar">
+            <div>
+
+            </div>
+          </div>
+          <div>
+            <p>0%</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Image src="" alt=""/>
+            <h3>CSS</h3>
+          </div>
+          <div className="progressbar">
+            <div>
+
+            </div>
+          </div>
+          <div>
+            <p>0%</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Image src="" alt=""/>
+            <h3>JavaScript</h3>
+          </div>
+          <div className="progressbar">
+            <div>
+
+            </div>
+          </div>
+          <div>
+            <p>0%</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Image src="" alt=""/>
+            <h3>React</h3>
+          </div>
+          <div className="progressbar">
+            <div>
+
+            </div>
+          </div>
+          <div>
+            <p>0%</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Image src="" alt=""/>
+            <h3>TypeScript</h3>
+          </div>
+          <div className="progressbar">
+            <div>
+
+            </div>
+          </div>
+          <div>
+            <p>0%</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Image src="" alt=""/>
+            <h3>Database</h3>
+          </div>
+          <div className="progressbar">
+            <div>
+
+            </div>
+          </div>
+          <div>
+            <p>0%</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Image src="" alt=""/>
+            <h3>UI/UX Design</h3>
+          </div>
+          <div className="progressbar">
+            <div>
+
+            </div>
+          </div>
+          <div>
+            <p>0%</p>
+          </div>
+        </div>
+      </div>
+      <div className="project">
+        <h2 className="project-title">Projects</h2>
+        <div>
+          <Image src="" alt=""/>
+          <div>
+            <h4>Small Group Community</h4>
+            <p>소모임 매칭 및 관리 플랫폼. 팀 협업으로 개발한 커뮤니티 웹사이트</p>
+          </div>
+          <div>
+            <div>
+              <p>Vite</p>
+            </div>
+            <div>
+              <p>React</p>
+            </div>
+            <div>
+              <p>SupaBase</p>
+            </div>
+            <div>
+              <p>Kakao API</p>
+            </div>
+          </div>
+          <div>
+            <Image src="" alt=""/>
+            <p>Code</p>
+          </div>
+          <div>
+            <Image src="" alt=""/>
+            <p>Live</p>
+          </div>
+        </div>
+        <div>
+          <Image src="" alt=""/>
+          <div>
+            <h4>Small Group Community</h4>
+            <p>소모임 매칭 및 관리 플랫폼. 팀 협업으로 개발한 커뮤니티 웹사이트</p>
+          </div>
+          <div>
+            <div>
+              <p>Vite</p>
+            </div>
+            <div>
+              <p>React</p>
+            </div>
+            <div>
+              <p>SupaBase</p>
+            </div>
+            <div>
+              <p>Kakao API</p>
+            </div>
+          </div>
+          <div>
+            <Image src="" alt=""/>
+            <p>Code</p>
+          </div>
+          <div>
+            <Image src="" alt=""/>
+            <p>Live</p>
+          </div>
+        </div>
+        <div>
+          <Image src="" alt=""/>
+          <div>
+            <h4>Small Group Community</h4>
+            <p>소모임 매칭 및 관리 플랫폼. 팀 협업으로 개발한 커뮤니티 웹사이트</p>
+          </div>
+          <div>
+            <div>
+              <p>Vite</p>
+            </div>
+            <div>
+              <p>React</p>
+            </div>
+            <div>
+              <p>SupaBase</p>
+            </div>
+            <div>
+              <p>Kakao API</p>
+            </div>
+          </div>
+          <div>
+            <Image src="" alt=""/>
+            <p>Code</p>
+          </div>
+          <div>
+            <Image src="" alt=""/>
+            <p>Live</p>
+          </div>
+        </div>
+      </div>
+      <div className="connect">
+        <h2 className="connect-title">Let&apos;s Connect</h2>
+        <div>
+          <h4>Ready to Work together?</h4>
+          <p>새로운 기회와 흥미로운 프로젝트에 항상 관심이 있습니다.</p>
+          <div>
+            <Image src="" alt=""/>
+            <p>gungsun1@naver.com</p>
+          </div>
+          <div>
+            <Image src="" alt=""/>
+            <p>+82 010-6546-4033</p>
+          </div>
+          <div>
+            <Image src="" alt=""/>
+            <p>Seoul, Korea</p>
+          </div>
+          <div>
+            <h4>get in Touch</h4>
+          </div>
+        </div>
+      </div>
+    </main>
     </div>
+    <footer>
+      <p>© 2025 Kyeongseon Park. Built with Next.js.</p>
+    </footer>
+
+    </>
   );
 }
