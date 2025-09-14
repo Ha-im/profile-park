@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
   font-size:1.2rem;
 }
 .container {
-  max-width: 1200px;
+  max-width:1156px;
   margin: 0 auto;
   padding:0 24px;
 }
@@ -110,9 +110,64 @@ footer{
   align-items: center;
   justify-content: center;
 }
+/* about css */
 .about{
-  min-height: 100vh;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  gap:30px;
+  justify-content: center;
 }
+.about-developer{
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
+}
+.about-developer h4{
+  font-size:1.2rem;
+  margin-bottom:16px
+}
+.about-developer > p{
+  margin-bottom:12px;
+}
+.badges{
+ display:flex;
+ gap:10px; 
+}
+.badges div{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+.feature{
+  display:flex;
+  gap:42px;
+  justify-content: space-between;
+}
+.feature-item{
+  width:100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
+}
+.feature-title{
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom:8px;
+}
+.feature-desc{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+/*about css end*/
 .skills{
   min-height: 100vh;
 }

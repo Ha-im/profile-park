@@ -22,39 +22,41 @@ export default function Home() {
       </div>
       <div className="about">
         <h2 className="about-title">About Me</h2>
-        <div>
+        <div className="about-developer">
           <h4>Frontend Developer</h4>
           <p>프론트엔드 개발의 기초부터 최신 프레임워크까지 체계적으로 학습해온 예비 개발자입니다.<br/>배운 지식을 실무에 적용하며 사용자 중심의 웹 경험을 만들어가고 싶습니다.</p>
+          <div className="badges">
+            <div>
+              <p>HTML</p>
+            </div>
+            <div>
+              <p>CSS</p>
+            </div>
+            <div>
+              <p>JavaScript</p>
+            </div>
+            <div>
+              <p>React</p>
+            </div>
+            <div>
+              <p>Vite</p>
+            </div>
+            <div>
+              <p>BootStrap</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <div>
-            <p>HTML</p>
+        <div className="feature">
+          <div className="feature-item">
+            <Image src="" alt=""/>
+            <h4 className="feature-title">Web Development</h4>
+            <p className="feature-desc">반응형 웹 사이트 제작 학습중</p>
           </div>
-          <div>
-            <p>CSS</p>
+          <div className="feature-item">
+            <Image src="" alt=""/>
+            <h4 className="feature-title">Team Collaboration</h4>
+            <p className="feature-desc">소통과 협업을 중시</p>
           </div>
-          <div>
-            <p>JavaScript</p>
-          </div>
-          <div>
-            <p>React</p>
-          </div>
-          <div>
-            <p>Vite</p>
-          </div>
-          <div>
-            <p>BootStrap</p>
-          </div>
-        </div>
-        <div>
-          <Image src="" alt=""/>
-          <h4>Web Development</h4>
-          <p>반응형 웹 사이트 제작 학습중</p>
-        </div>
-        <div>
-          <Image src="" alt=""/>
-          <h4>Team Collaboration</h4>
-          <p>소통과 협업을 중시</p>
         </div>
       </div>
       <div className="skills">
@@ -256,10 +258,6 @@ export default function Home() {
           <div>
             <Image src="" alt=""/>
             <p>gungsun1@naver.com</p>
-          </div>
-          <div>
-            <Image src="" alt=""/>
-            <p>+82 010-6546-4033</p>
           </div>
           <div>
             <Image src="" alt=""/>
