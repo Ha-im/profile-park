@@ -61,8 +61,8 @@ export default function Home() {
       </div>
       <div className="skills">
         <h2 className="skills-title">Skills</h2>
-        <div>
-          <div>
+        <div className="skills-desc">
+          <div >
             <Image src="" alt=""/>
             <h3>HTML</h3>
           </div>
@@ -75,10 +75,10 @@ export default function Home() {
             <p>0%</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="skills-desc">
+          <div >
             <Image src="" alt=""/>
-            <h3>CSS</h3>
+            <h3>HTML</h3>
           </div>
           <div className="progressbar">
             <div>
@@ -89,10 +89,10 @@ export default function Home() {
             <p>0%</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="skills-desc">
+          <div >
             <Image src="" alt=""/>
-            <h3>JavaScript</h3>
+            <h3>HTML</h3>
           </div>
           <div className="progressbar">
             <div>
@@ -103,10 +103,10 @@ export default function Home() {
             <p>0%</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="skills-desc">
+          <div >
             <Image src="" alt=""/>
-            <h3>React</h3>
+            <h3>HTML</h3>
           </div>
           <div className="progressbar">
             <div>
@@ -117,10 +117,10 @@ export default function Home() {
             <p>0%</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="skills-desc">
+          <div >
             <Image src="" alt=""/>
-            <h3>TypeScript</h3>
+            <h3>HTML</h3>
           </div>
           <div className="progressbar">
             <div>
@@ -131,24 +131,10 @@ export default function Home() {
             <p>0%</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="skills-desc">
+          <div >
             <Image src="" alt=""/>
-            <h3>Database</h3>
-          </div>
-          <div className="progressbar">
-            <div>
-
-            </div>
-          </div>
-          <div>
-            <p>0%</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <Image src="" alt=""/>
-            <h3>UI/UX Design</h3>
+            <h3>HTML</h3>
           </div>
           <div className="progressbar">
             <div>
