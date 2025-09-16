@@ -148,33 +148,42 @@ export default function Home() {
       </div>
       <div className="project">
         <h2 className="project-title">Projects</h2>
-        <div>
+        <div className="project-teb">
+          <ul>
+            <li><a href="">전체</a></li>
+            <li><a href="">팀 프로젝트</a></li>
+            <li><a href="">개인 프로젝트</a></li>
+          </ul>
+        </div>
+        <div className="project-card">
           <Image src="" alt=""/>
-          <div>
+          <div className="project-desc">
             <h4>Small Group Community</h4>
             <p>소모임 매칭 및 관리 플랫폼. 팀 협업으로 개발한 커뮤니티 웹사이트</p>
           </div>
-          <div>
-            <div>
+          <div className="project-badges">
+            <div className="project-badge">
               <p>Vite</p>
             </div>
-            <div>
+            <div className="project-badge">
               <p>React</p>
             </div>
-            <div>
+            <div className="project-badge">
               <p>SupaBase</p>
             </div>
-            <div>
+            <div className="project-badge">
               <p>Kakao API</p>
             </div>
           </div>
-          <div>
-            <Image src="" alt=""/>
-            <p>Code</p>
-          </div>
-          <div>
-            <Image src="" alt=""/>
-            <p>Live</p>
+          <div className="project-link">
+            <div>
+              <Image src="" alt=""/>
+              <p>Code</p>
+            </div>
+            <div>
+              <Image src="" alt=""/>
+              <p>Live</p>
+            </div>
           </div>
         </div>
         <div>
