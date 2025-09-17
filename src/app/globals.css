@@ -1,258 +1,33 @@
 @import './reset.css';
 
-body {
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
-  color: #171717;
-  text-align: center;
-  background: linear-gradient(135deg, #1e1b4b 0%, #7c3aed 50%, #1e1b4b 100%);
-  color:#fafafa;
-}
-
+/* header.css */
 header {
-  padding: 16px 24px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-}
-.park{
-  font-size:1.5rem;
-  font-weight:700;
-  background: linear-gradient(45deg, #ec4899, #8b5cf6, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.home .home-title,.about .about-title,.skills .skills-title,.project .project-title,.connect .connect-title{
-  font-size: 4rem; 
-  font-weight: bold;
-  display: inline-block; 
-  background: linear-gradient(45deg, #ec4899, #8b5cf6, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom:36px;
-}
-.home .name{
-  font-size:3rem;
-  margin-bottom:32px;
-}
-h1, h2, h3, h4 {
-  margin: 0;
-}
-.typetext{
-  font-size: 1.5rem;
-  color: #ec4899;
-  margin-bottom: 2rem;
-  height: 3rem;
+  position: fixed;   /* 화면 상단에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7); /* 반투명 배경 */
+  color: white;
+  padding: 15px 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.description{
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 3rem;
-  line-height: 1.6;
-}
-.project-btn{
-  background:linear-gradient(45deg, #ec4899, #8b5cf6);
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  color:#fafafa;
-  font-size:1.2rem;
-}
-.container {
-  max-width:1156px;
-  margin: 0 auto;
-  padding:0 24px;
-}
-
-.home h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.scroll-indicator{
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateY(-50%);
-    animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  0%{
-    transform:translateY(30%)
-  }
-  50%{
-    transform:translateY(0)
-  }
-  100%{
-    transform:translateY(30%)
-  }
-}
-
-p {
-  line-height: 1.5;
-}
-footer{
-  text-align: center;
-  padding: 16px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-/* home css */
-.home{
-  min-height: 100vh;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-/* about css */
-.about{
-  width:100%;
-  display:flex;
-  flex-direction: column;
-  gap:30px;
-  justify-content: center;
-}
-.about-developer{
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: left;
-}
-.about-developer h4{
-  font-size:1.2rem;
-  margin-bottom:16px
-}
-.about-developer > p{
-  margin-bottom:12px;
-}
-.badges{
- display:flex;
- gap:10px; 
-}
-.badges div{
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.9);
-}
-.feature{
-  display:flex;
-  gap:42px;
   justify-content: space-between;
-  margin-bottom:100px;
-}
-.feature-item{
-  width:100%;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: left;
-}
-.feature-title{
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom:8px;
-}
-.feature-desc{
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-/*about css end*/
-/* skills css */
-.skills{
-  min-height: 100vh;
-  margin-bottom:100px;
-}
-.skills-desc h3{
-  font-size:1.2em;
-  font-weight:700;
-  margin-bottom:16px;
-}
-.skills-desc{
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: left;
-  margin-bottom: 32px;
-}
-.progressbar{
-  max-width:100% ;
-  height:0.2em;
-  border-radius:4px;
-  background:#fafafa;
-  margin-bottom:10px;
-}
-/* skills end */
-/* project css */
-.project-teb{
-  display:flex;
-  justify-content: center;
-}
-.project-teb ul{
-  display:flex;
-  gap:10px;
-  margin-bottom:32px;
-}
-.project-teb ul li{
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.8rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
+  align-items: center;
+  z-index: 100; /* 섹션 위에 나오게 */
 }
 
-.project-card{
-  width:100%;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 2rem;
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
-.project-badges{
-  max-width:100%;
-  display:flex;
-  align-items: center;
-  gap:10px;
+
+header ul li a {
+  color: white;
+  text-decoration: none;
 }
-.project-desc{
-text-align: left;
+
+header ul li a:hover {
+  text-decoration: underline;
 }
-.project-desc h4{
-  font-size:1rem;
-  font-weight: 700;
-  margin-bottom:12px;
-}
-.project-desc p{
-  font-size:0.8rem;
-  margin-bottom:16px;
-}
-.project-badge{
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 0.3rem 0.8rem;
-}
-.project-link{
-  display:flex;
-  gap:10px;
-}
-/* connect css */
-.connect{
-  width:100%;
-  
-}
+
+/* footer.css */

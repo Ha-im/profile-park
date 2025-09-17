@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "fullpage.js/dist/fullpage.css"; // 이 줄 추가!
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
