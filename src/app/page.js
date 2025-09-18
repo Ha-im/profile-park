@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState, useEffect } from "react";
 
 export default function Home() {
- const texts = ["React", "Next.js", "Supabase","장원석","박영태"]; // 타이핑할 스택
+ const texts = ["React", "Next.js", "Supabase","Node.js","Wordpress","Figma","Git","Firebase","Vue.js","Vite","Bootstrap","Apache","MySQL","PHP","Jquery","HTML","CSS","JavaScript"]; // 타이핑할 스택
   const speed = 100; // 글자당 지연(ms)
   const pause = 1000; // 한 단어 끝난 후 대기(ms)
 
@@ -71,40 +71,36 @@ export default function Home() {
                 </div>
                 <div className='badges'>
                   <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
+                    <Image src="/image/html5.svg" alt="HTML5 Logo" width={24} height={24}/>
+                    <p>HTML5</p>
+                  </div>
+                  <div>
+                    <Image src="/image/css.svg" alt="CSS Logo" width={24} height={24}/>
+                    <p>CSS</p>
+                  </div>
+                  <div>
+                    <Image src="/image/javascript.svg" alt="JavaScript Logo" width={24} height={24}/>
+                    <p>JavaScript</p>
+                  </div>
+                  <div>
+                    <Image src="/image/jquery.svg" alt="Jquery Logo" width={24} height={24}/>
+                    <p>Jquery</p>
                   </div>
                   <div>
                     <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
                     <p>React</p>
                   </div>
                   <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
+                    <Image src="/image/vite.svg" alt="Vite Logo" width={24} height={24}/>
+                    <p>Vite</p>
                   </div>
                   <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
+                    <Image src="/image/nextdotjs.svg" alt="Nextjs Logo" width={24} height={24}/>
+                    <p>Next.js</p>
                   </div>
                   <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
-                  </div>
-                  <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
-                  </div>
-                  <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
-                  </div>
-                  <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
-                  </div>
-                  <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
+                    <Image src="/image/vuedotjs.svg" alt="Vue Logo" width={24} height={24}/>
+                    <p>Vue</p>
                   </div>
                 </div>
               </div>
@@ -129,28 +125,96 @@ export default function Home() {
               <h2 className="skills-title">Skills</h2>
               <div>
                 <h3 className='current-skills'>Current Skills</h3>
-                <div class="badges">
+                <div className="badges">
+                  <div>
+                    <Image src="/image/html5.svg" alt="HEML5 Logo" width={24} height={24}/>
+                    <p>HEML5</p>
+                  </div>
+                  <div>
+                    <Image src="/image/css.svg" alt="CSS Logo" width={24} height={24}/>
+                    <p>CSS</p>
+                  </div>
+                  <div>
+                    <Image src="/image/javascript.svg" alt="JavaScript Logo" width={24} height={24}/>
+                    <p>JavaScript</p>
+                  </div>
                   <div>
                     <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
                     <p>React</p>
                   </div>
+                  <div>
+                    <Image src="/image/vite.svg" alt="Vite Logo" width={24} height={24}/>
+                    <p>Vite</p>
+                  </div>
+                  <div>
+                    <Image src="/image/jquery.svg" alt="Vite Logo" width={24} height={24}/>
+                    <p>Jquery</p>
+                  </div>
+                  <div>
+                    <Image src="/image/git.svg" alt="React Logo" width={24} height={24}/>
+                    <p>Git/GitHub</p>
+                  </div>
                 </div>
               </div>
               <div>
-                <h3 className='experienced-tools'>Experienced Tools</h3>
-                <div class="badges">
+                <h3 className='experienced-tools'>Tools & Experience</h3>
+                <div className="badges">
                   <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
+                    <Image src="/image/nextdotjs.svg" alt="Next Logo" width={24} height={24}/>
+                    <p>Next.js</p>
+                  </div>
+                  <div>
+                    <Image src="/image/supabase.svg" alt="supabase Logo" width={24} height={24}/>
+                    <p>Supabase</p>
+                  </div>
+                  <div>
+                    <Image src="/image/firebase.svg" alt="firebase Logo" width={24} height={24}/>
+                    <p>Firebase</p>
+                  </div>
+                  <div>
+                    <Image src="/image/figma.svg" alt="React Logo" width={24} height={24}/>
+                    <p>Figma</p>
+                  </div>
+                  <div>
+                    <Image src="/image/typescript.svg" alt="React Logo" width={24} height={24}/>
+                    <p>TypeScript</p>
+                  </div>
+                  <div>
+                    <Image src="/image/wordpress.svg" alt="React Logo" width={24} height={24}/>
+                    <p>Wordpress</p>
+                  </div>
+                  <div>
+                    <Image src="/image/nodedotjs.svg" alt="React Logo" width={24} height={24}/>
+                    <p>Node.js</p>
+                  </div>
+                  <div>
+                    <Image src="/image/mysql.svg" alt="React Logo" width={24} height={24}/>
+                    <p>MySQL</p>
+                  </div>
+                  <div>
+                    <Image src="/image/php.svg" alt="React Logo" width={24} height={24}/>
+                    <p>PHP</p>
+                  </div>
+                  <div>
+                    <Image src="/image/boots.svg" alt="React Logo" width={24} height={24}/>
+                    <p>BootStrap</p>
                   </div>
                 </div>
               </div>
               <div>
                 <h3 className='currently-learning'>Currently Learning</h3>
-                <div class="badges">
+                <div className="badges">
                   <div>
-                    <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24}/>
-                    <p>React</p>
+                    <Image src="/image/typescript.svg" alt="React Logo" width={24} height={24}/>
+                    <p>TypeScript</p>
+                  </div>
+                  <div>
+                    <Image src="/image/tailwindcss.svg" alt="React Logo" width={24} height={24}/>
+                    <p>Tailwind CSS</p>
+                  </div>
+                  <div>
+                    <Image src="/image/vuedotjs.svg" alt="React Logo" width={24} height={24}/>
+                    <p>Vue</p>
                   </div>
                 </div>
               </div>
@@ -161,17 +225,17 @@ export default function Home() {
               <h2 className="project-title">Project</h2>
               <div>
                 <div className='badges-all'>
-                    <div class="badges">
+                    <div className="badges">
                       <div>
                         <p><a href="">All</a></p>
                       </div>
                     </div>
-                    <div class="badges">
+                    <div className="badges">
                       <div>
                         <p><a href="">Team Projects</a></p>
                       </div>
                     </div>
-                    <div class="badges">
+                    <div className="badges">
                       <div>
                         <p><a href="">Personal Projects</a></p>
                       </div>
@@ -200,12 +264,16 @@ export default function Home() {
                   </div>
                   <div className='git-link'>
                     <div>
-                      <Image src="" alt=""/>
-                      <p>GitHub</p>
+                      <a href="">
+                        <Image src="/image/github.svg" alt="" width={24} height={24}/>
+                        <p>GitHub</p>
+                      </a>
                     </div>
                     <div>
-                      <Image src="" alt=""/>
-                      <p>Site</p>
+                      <a href="">
+                        <Image src="/image/open-in-new.svg" alt=""width={24} height={24}/>
+                        <p>Site</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -230,12 +298,16 @@ export default function Home() {
                   </div>
                   <div className='git-link'>
                     <div>
-                      <Image src="" alt=""/>
-                      <p>GitHub</p>
+                      <a href="">
+                        <Image src="/image/github.svg" alt="" width={24} height={24}/>
+                        <p>GitHub</p>
+                      </a>
                     </div>
                     <div>
-                      <Image src="" alt=""/>
-                      <p>Site</p>
+                      <a href="">
+                        <Image src="/image/open-in-new.svg" alt="" width={24} height={24}/>
+                        <p>Site</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -260,12 +332,16 @@ export default function Home() {
                   </div>
                   <div className='git-link'>
                     <div>
-                      <Image src="" alt=""/>
-                      <p>GitHub</p>
+                      <a href="">
+                        <Image src="/image/github.svg" alt="" width={24} height={24}/>
+                        <p>GitHub</p>
+                      </a>
                     </div>
                     <div>
-                      <Image src="" alt=""/>
-                      <p>Site</p>
+                      <a href="">
+                        <Image src="/image/open-in-new.svg" alt="" width={24} height={24}/>
+                        <p>Site</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -298,28 +374,28 @@ export default function Home() {
             {/* Contact */}
             <div className="contact">
               <h2 className="contact-title">Contact</h2>
-              <div>
+              <div className='intro-message'>
                 <p>
                 <span>“오늘보다 나은 내일을 위해”</span><br/>
                 <span>“계속 성장하는 모습을 보여드리겠습니다.”</span>
                 </p>
               </div>
-              <div>
-                  <div>
+              <div className='contact-links'>
+                  <div className='contact-item'>
                     <a href=''>
-                      <Image src="" alt=""/>
+                      <Image src="/image/github.svg" alt="" width={24} height={24}/>
                       <p>GitHub</p>
                     </a>
                   </div>
-                  <div>
+                  <div className='contact-item'>
                     <a href=''>
-                      <Image src="" alt=""/>
+                      <Image src="/image/mail.svg" alt="" width={24} height={24}/>
                       <p>Email</p>
                     </a>
                   </div>
-                  <div>
+                  <div className='contact-item'>
                     <a href=''>
-                      <Image src="" alt=""/>
+                      <Image src="/image/tistory.svg" alt="" width={24} height={24}/>
                       <p>Blog</p>
                     </a>
                   </div>
