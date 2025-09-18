@@ -196,7 +196,7 @@ export default function Home() {
                     <p>PHP</p>
                   </div>
                   <div>
-                    <Image src="/image/boots.svg" alt="React Logo" width={24} height={24}/>
+                    <Image src="/image/bootstrap.svg" alt="React Logo" width={24} height={24}/>
                     <p>BootStrap</p>
                   </div>
                 </div>
