@@ -9,18 +9,19 @@ body {
 }
 /* header.css */
 header {
-  position: fixed;   /* 화면 상단에 고정 */
+  position: fixed;   
   top: 0;
   left: 0;
   width:100%;
-  background: rgba(0,0,0,0.7); /* 반투명 배경 */
+  background: rgba(0,0,0,0.7); 
   color: white;
   padding: 24px 48px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100; /* 섹션 위에 나오게 */
+  z-index: 100; 
   box-sizing: border-box;
+  border-bottom: 1px #ffff solid;
 }
 
 header ul {
@@ -46,6 +47,7 @@ header ul li a:hover {
 }
 /* Home */
 .home{
+  width: 100%;
   height: 100vh;
   display:flex;
   flex-direction: column;
@@ -116,7 +118,7 @@ header ul li a:hover {
   display:flex;
   flex-direction: column;
   gap:63px;
-  height:100vh;
+  margin-bottom:100px;
 }
 .badges{
   display:flex;
@@ -146,7 +148,7 @@ header ul li a:hover {
 
 /* skills */
 .skills{
-  height: 100vh;
+margin-bottom:100px;
 }
 .skills div{
   margin-bottom:63px;
@@ -157,9 +159,12 @@ header ul li a:hover {
   margin-bottom:36px;
   text-align: center;
 }
+.skills .badges{
+  justify-content: center;
+}
 /* project */
 .project{
-  height: 100vh;
+margin-bottom:100px;
 }
 .project .badges-all{
   display:flex;
@@ -203,7 +208,7 @@ justify-content: space-between;
 }
 /* interview  */ 
 .interview{
-  height: 100vh;
+margin-bottom:100px;
 }
 .qna{
   padding:24px;
@@ -221,10 +226,46 @@ justify-content: space-between;
 }
 /* text container 스타일 */
 .text p {
-  white-space: nowrap;                    /* 한 줄로 유지 */
-  overflow: hidden;                       /* 넘치는 부분 숨김 */
+  white-space: nowrap;           
+  overflow: hidden;                      
 }
+
+/* contact */
+.contact{
+margin-bottom:100px;
+
+}
+.intro-message{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom:80px;
+}
+
+.intro-message p span:first-child{
+  font-size:2.3rem;
+  font-style: italic;
+}
+.intro-message p span:last-child{
+  font-size:2.8rem;
+  line-height: 3.5rem;
+}
+
+.contact-links{
+  display:flex;
+  gap:12px;
+  justify-content: center;
+}
+
 /* footer.css */
+footer{
+  background:rgba(15,15,15,0.9);
+  padding:16px 24px;
+  text-align: center;
+  font-size:1rem;
+  font-weight: 700;
+}
 
 /* 공통 */
 span{
@@ -238,4 +279,742 @@ span{
 }
 p{
   line-height:1.4rem;
+}
+
+@import './reset.css';
+
+/* 기본 스타일 (모바일 우선) */
+body {
+  margin: 0 auto;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+  background: linear-gradient(135deg, #0F0F0F 0%, #1A1A1A 100%);
+  color: #eaeaea;
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+
+header ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+header ul li {
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1156px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Home Section */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 80px 16px 60px;
+  text-align: center;
+}
+
+.title-sub {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.home-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.title h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.title h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.home div .text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2D8F14;
+  line-height: 1.2;
+}
+
+.arrow-icon {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1s infinite;
+  font-size: 1.5rem;
+}
+
+/* 애니메이션 */
+@keyframes bounce {
+  0% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* 텍스트 애니메이션 */
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1.2s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badges div {
+  padding: 8px 12px;
+  background: #2B2B2B;
+  border: 1px #d9d9d9 solid;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+}
+
+.role-title, .Strengths, .Philosophy {
+  border-bottom: 2px #d9d9d9 solid;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+}
+
+.about-role {
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+  margin-bottom: 60px;
+}
+
+.skills div {
+  margin-bottom: 40px;
+}
+
+.experienced-tools, .current-skills, .currently-learning {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Project Section */
+.project {
+  margin-bottom: 60px;
+}
+
+.project .badges-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  min-height: 350px;
+  border: 1px #d9d9d9 solid;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+.project-card div {
+  margin-bottom: 8px;
+}
+
+.project-card div h6 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.git-link {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Interview Section */
+.interview {
+  margin-bottom: 60px;
+}
+
+.qna {
+  padding: 16px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #1F5F0E 0%, #264F0D 100%);
+}
+
+.qna h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.interview-qna {
+  margin-bottom: 20px;
+  padding-left: 8px;
+  font-size: 0.9rem;
+}
+
+/* Text Container */
+.text p {
+  white-space: normal;
+  overflow: visible;
+  word-break: keep-all;
+}
+
+/* Contact Section */
+.contact {
+  margin-bottom: 60px;
+}
+
+.intro-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 16px;
+}
+
+.intro-message p span:first-child {
+  font-size: 1.3rem;
+  font-style: italic;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.intro-message p span:last-child {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  display: block;
+}
+
+.contact-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+  background: rgba(15, 15, 15, 0.9);
+  padding: 16px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-top:1px #ededed solid;
+}
+
+/* 공통 스타일 */
+span {
+  font-weight: 700;
+}
+
+.about-title, .skills-title, .project-title, .interview-title, .contact-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.contact-item a{
+  display:flex;
+  align-items: center;
+  gap:8px
+}
+/* 태블릿 스타일 */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 16px 24px;
+  }
+
+  header ul li {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .home {
+    padding: 100px 24px 80px;
+  }
+
+  .home-sub {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .title h2 {
+    font-size: 2.8rem;
+  }
+
+  .title h3 {
+    font-size: 2.2rem;
+  }
+
+  .title h4 {
+    font-size: 1.2rem;
+  }
+
+  .home div .text {
+    font-size: 3rem;
+  }
+
+  .title-sub {
+    font-size: 1rem;
+  }
+
+  .about {
+    gap: 48px;
+    margin-bottom: 80px;
+  }
+
+  .badges {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .badges div {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .role-title, .Strengths, .Philosophy {
+    font-size: 1.3rem;
+  }
+
+  .skills {
+    margin-bottom: 80px;
+  }
+
+  .skills div {
+    margin-bottom: 50px;
+  }
+
+  .experienced-tools, .current-skills, .currently-learning {
+    font-size: 1.3rem;
+    margin-bottom: 32px;
+  }
+
+  .project {
+    margin-bottom: 80px;
+  }
+
+  .project .badges-all {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .project-cards {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 300px;
+    min-height: 380px;
+  }
+
+  .project-card-title {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
+  }
+
+  .interview {
+    margin-bottom: 80px;
+  }
+
+  .qna {
+    padding: 20px;
+  }
+
+  .qna h3 {
+    font-size: 1.3rem;
+  }
+
+  .interview-qna {
+    font-size: 1rem;
+    padding-left: 12px;
+  }
+
+  .contact {
+    margin-bottom: 80px;
+  }
+
+  .intro-message {
+    margin-bottom: 60px;
+  }
+
+  .intro-message p span:first-child {
+    font-size: 1.8rem;
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  .intro-message p span:last-child {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    display: inline;
+  }
+
+  .about-title, .skills-title, .project-title, .interview-title, .contact-title {
+    font-size: 2rem;
+    margin-bottom: 80px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* 데스크톱 스타일 */
+@media (min-width: 1024px) {
+  header {
+    padding: 24px 48px;
+  }
+
+  header ul li {
+    font-size: 1rem;
+  }
+
+  .home {
+    padding: 120px 24px 100px;
+  }
+
+  .title h2 {
+    font-size: 3.9rem;
+  }
+
+  .title h3 {
+    font-size: 3rem;
+    margin-bottom: 24px;
+  }
+
+  .title h4 {
+    font-size: 1.5rem;
+  }
+
+  .home div .text {
+    font-size: 4.2rem;
+  }
+
+  .title-sub {
+    font-size: 1.2rem;
+    line-height: 32px;
+  }
+
+  .arrow-icon {
+    bottom: 2rem;
+  }
+
+  .about {
+    gap: 63px;
+    margin-bottom: 100px;
+  }
+
+  .badges div {
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .role-title, .Strengths, .Philosophy {
+    font-size: 1.5rem;
+  }
+
+  .about-role {
+    margin-bottom: 24px;
+  }
+
+  .skills {
+    margin-bottom: 100px;
+  }
+
+  .skills div {
+    margin-bottom: 63px;
+  }
+
+  .experienced-tools, .current-skills, .currently-learning {
+    font-size: 1.5rem;
+    margin-bottom: 36px;
+  }
+
+  .project {
+    margin-bottom: 100px;
+  }
+
+  .project .badges-all {
+    gap: 36px;
+    margin-bottom: 48px;
+  }
+
+  .project-cards {
+    justify-content: space-between;
+  }
+
+  .project-card {
+    height: 400px;
+    border-radius: 20px;
+  }
+
+  .interview {
+    margin-bottom: 100px;
+  }
+
+  .qna {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .qna h3 {
+    font-size: 1.5rem;
+  }
+
+  .interview-qna {
+    margin-bottom: 24px;
+  }
+
+  .text p {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .contact {
+    margin-bottom: 100px;
+  }
+
+  .intro-message {
+    margin-bottom: 80px;
+  }
+
+  .intro-message p span:first-child {
+    font-size: 2.3rem;
+  }
+
+  .intro-message p span:last-child {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+  }
+
+  .about-title, .skills-title, .project-title, .interview-title, .contact-title {
+    font-size: 2.3rem;
+    margin-bottom: 120px;
+  }
+
+  footer {
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+}
+
+/* 대형 데스크톱 */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .home div .text {
+    font-size: 4.8rem;
+  }
+
+  .title h2 {
+    font-size: 4.2rem;
+  }
+
+  .title h3 {
+    font-size: 3.2rem;
+  }
+}
+
+/* 초소형 모바일 */
+@media (max-width: 480px) {
+  header {
+    padding: 8px 12px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  header ul {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  header ul li {
+    font-size: 0.7rem;
+  }
+
+  .home {
+    padding: 100px 12px 60px;
+  }
+
+  .title h2 {
+    font-size: 1.6rem;
+  }
+
+  .title h3 {
+    font-size: 1.2rem;
+  }
+
+  .home div .text {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .about-title, .skills-title, .project-title, .interview-title, .contact-title {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  .badges {
+    gap: 6px;
+  }
+
+  .badges div {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  .project .badges-all {
+    gap: 8px;
+  }
+
+  .intro-message p span:first-child {
+    font-size: 1.1rem;
+  }
+
+  .intro-message p span:last-child {
+    font-size: 1.3rem;
+  }
 }
