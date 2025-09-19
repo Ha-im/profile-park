@@ -150,7 +150,7 @@ header ul li a:hover {
 .skills{
 margin-bottom:100px;
 }
-.skills div{
+.skills > div{
   margin-bottom:63px;
 }
 .experienced-tools,.current-skills,.currently-learning{
@@ -465,7 +465,7 @@ header ul li a:hover {
   margin-bottom: 60px;
 }
 
-.skills div {
+.skills > div {
   margin-bottom: 40px;
 }
 
@@ -550,12 +550,14 @@ header ul li a:hover {
   border-radius: 15px;
   margin-bottom: 12px;
   background: linear-gradient(135deg, #1F5F0E 0%, #264F0D 100%);
+  display:flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .qna h3 {
   font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 8px;
 }
 
 .interview-qna {
@@ -637,6 +639,43 @@ p {
   align-items: center;
   gap:8px
 }
+/* action button  */
+.action-buttons {
+  position: fixed;
+  top: 80%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+.mail-color-black-btn,.feedback-btn,.arrow-upward-btn{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  background:#ededed;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.action-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display:flex;
+}
+.action-buttons div:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px); 
+}
+.mail-color-black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* 태블릿 스타일 */
 @media (min-width: 768px) {
   body {
@@ -707,7 +746,7 @@ p {
     margin-bottom: 80px;
   }
 
-  .skills div {
+  .skills > div {
     margin-bottom: 50px;
   }
 
@@ -735,6 +774,7 @@ p {
   .project-card {
     width: 300px;
     min-height: 380px;
+    padding:20px 40px;
   }
 
   .project-card-title {
@@ -858,7 +898,7 @@ p {
     margin-bottom: 100px;
   }
 
-  .skills div {
+  .skills > div {
     margin-bottom: 63px;
   }
 

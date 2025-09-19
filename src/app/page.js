@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -35,12 +36,12 @@ export default function Home() {
           <header>
                 <h1 className="name">kyeongseon Park</h1>
                 <ul>
-                  <li><a href="">HOME</a></li>
-                  <li><a href="">ABOUT ME</a></li>
-                  <li><a href="">SKILLS</a></li>
-                  <li><a href="">PROJECTS</a></li>
-                  <li><a href="">INTERVIEW</a></li>
-                  <li><a href="">CONTACT</a></li>
+                  <li><Link href=""/>HOME</li>
+                  <li><Link href=""/>ABOUT ME</li>
+                  <li><Link href=""/>SKILLS</li>
+                  <li><Link href=""/>PROJECTS</li>
+                  <li><Link href=""/>INTERVIEW</li>
+                  <li><Link href=""/>CONTACT</li>
                 </ul>
           </header>
           <div className="container">
@@ -227,17 +228,17 @@ export default function Home() {
                 <div className='badges-all'>
                     <div className="badges">
                       <div>
-                        <p><a href="">All</a></p>
+                        <p><Link href=""/>All</p>
                       </div>
                     </div>
                     <div className="badges">
                       <div>
-                        <p><a href="">Team Projects</a></p>
+                        <p><Link href=""/>Team Projects</p>
                       </div>
                     </div>
                     <div className="badges">
                       <div>
-                        <p><a href="">Personal Projects</a></p>
+                        <p><Link href=""/>Personal Projects</p>
                       </div>
                     </div>
                 </div>
@@ -264,16 +265,16 @@ export default function Home() {
                   </div>
                   <div className='git-link'>
                     <div>
-                      <a href="">
+                      <Link href=""/>
                         <Image src="/image/github.svg" alt="" width={24} height={24}/>
                         <p>GitHub</p>
-                      </a>
+                      
                     </div>
                     <div>
-                      <a href="">
+                      <Link href=""/>
                         <Image src="/image/open-in-new.svg" alt=""width={24} height={24}/>
                         <p>Site</p>
-                      </a>
+                      
                     </div>
                   </div>
                 </div>
@@ -298,16 +299,16 @@ export default function Home() {
                   </div>
                   <div className='git-link'>
                     <div>
-                      <a href="">
+                      <Link href=""/>
                         <Image src="/image/github.svg" alt="" width={24} height={24}/>
                         <p>GitHub</p>
-                      </a>
+                      
                     </div>
                     <div>
-                      <a href="">
+                      <Link href=""/>
                         <Image src="/image/open-in-new.svg" alt="" width={24} height={24}/>
                         <p>Site</p>
-                      </a>
+                      
                     </div>
                   </div>
                 </div>
@@ -332,16 +333,16 @@ export default function Home() {
                   </div>
                   <div className='git-link'>
                     <div>
-                      <a href="">
+                      <Link href=""/>
                         <Image src="/image/github.svg" alt="" width={24} height={24}/>
                         <p>GitHub</p>
-                      </a>
+                      
                     </div>
                     <div>
-                      <a href="">
+                      <Link href=""/>
                         <Image src="/image/open-in-new.svg" alt="" width={24} height={24}/>
                         <p>Site</p>
-                      </a>
+                      
                     </div>
                   </div>
                 </div>
@@ -382,22 +383,22 @@ export default function Home() {
               </div>
               <div className='contact-links'>
                   <div className='contact-item'>
-                    <a href=''>
+                    <Link href=''/>
                       <Image src="/image/github.svg" alt="" width={24} height={24}/>
                       <p>GitHub</p>
-                    </a>
+                    
                   </div>
                   <div className='contact-item'>
-                    <a href=''>
+                    <Link href=''/>
                       <Image src="/image/mail.svg" alt="" width={24} height={24}/>
                       <p>Email</p>
-                    </a>
+                    
                   </div>
                   <div className='contact-item'>
-                    <a href=''>
+                    <Link href=''/>
                       <Image src="/image/tistory.svg" alt="" width={24} height={24}/>
                       <p>Blog</p>
-                    </a>
+                    
                   </div>
                 </div>
             </div> 
@@ -405,7 +406,17 @@ export default function Home() {
             <footer>
               <h2>@ 2025 Kyeongseon Park, Built with Next.js</h2>
             </footer>
-
+          <div className='action-buttons'>
+            <div className='mail-color-black-btn'>
+              <button><Image src="/image/mail-color-black.svg" alt="" width={24} height={24}/></button>
+            </div>
+            <div className='feedback-btn'>
+              <button><Image src="/image/feedback.svg" alt="" width={24} height={24}/></button>
+            </div>
+            <div className='arrow-upward-btn'>
+              <button><Image src="/image/arrow_upward.svg" alt="" width={24} height={24}/></button>
+            </div>
+          </div>
           </>
 
   );
