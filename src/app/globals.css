@@ -254,7 +254,7 @@ margin-bottom:100px;
 
 .contact-links{
   display:flex;
-  gap:12px;
+  gap:16px;
   justify-content: center;
 }
 
@@ -602,7 +602,7 @@ header ul li a:hover {
 
 .contact-links {
   display: flex;
-  gap: 12px;
+  gap: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -633,11 +633,16 @@ p {
   line-height: 1.4;
   font-size: 0.9rem;
 }
-
+.contact-item{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+}
 .contact-item a{
   display:flex;
   align-items: center;
-  gap:8px
 }
 /* action button  */
 .action-buttons {

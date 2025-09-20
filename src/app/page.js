@@ -247,11 +247,11 @@ export default function Home() {
                 <div className='project-card'>
                   <div>
                     <h5 className='project-card-title'>Nestlé Clone Website</h5>
-                    <p>정적 웹사이트 클론 제작</p>
+                    <p>Static Website Clone Development</p>
                   </div>
                   <div>
                     <h6>Team Project</h6>
-                    <p>4명, 25% 기여</p>
+                    <p>4명, 프론트 25% </p>
                   </div>
                   <div>
                     <h6>Role / Contributions</h6>
@@ -261,7 +261,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h6>Tech Stack</h6>
-                    <p>HTML , CSS , JavaScript</p>
+                    <p>HTML, CSS, JavaScript</p>
                   </div>
                   <div className='git-link'>
                     <div>
@@ -280,22 +280,22 @@ export default function Home() {
                 </div>
                 <div className='project-card'>
                   <div>
-                    <h5 className='project-card-title'>Nestlé Clone Website</h5>
-                    <p>정적 웹사이트 클론 제작</p>
+                    <h5 className='project-card-title'>CGV Renewal</h5>
+                    <p>CGV Website Revamp with <br/>PHP & MySQL</p>
                   </div>
                   <div>
                     <h6>Team Project</h6>
-                    <p>4명, 25% 기여</p>
+                    <p>3명, 프론트 40% 백앤드 100%</p>
                   </div>
                   <div>
                     <h6>Role / Contributions</h6>
-                    <p>레이아웃 구성</p>
-                    <p>페이지 일부 인터렉션 구현</p>
-                    <p>무한 애니메이션 구현</p>
+                    <p>로그인 기능 연동 및 사용자 인증 구현</p>
+                    <p>관리자 페이지 제작</p>
+                    <p>영화 데이터 처리 및 출력 기능 개발</p>
                   </div>
                   <div>
                     <h6>Tech Stack</h6>
-                    <p>HTML , CSS , JavaScript</p>
+                    <p>HTML, CSS, Jquery, PHP, MySQL</p>
                   </div>
                   <div className='git-link'>
                     <div>
@@ -314,18 +314,19 @@ export default function Home() {
                 </div>
                 <div className='project-card'>
                   <div>
-                    <h5>Nestlé Clone Website</h5>
-                    <p>정적 웹사이트 클론 제작</p>
+                    <h5 className='project-card-title'>Wandoo Community</h5>
+                    <p>Wandoo Website Development <br/>with Vite & Firebase</p>
                   </div>
                   <div>
                     <h6>Team Project</h6>
-                    <p>4명, 25% 기여</p>
+                    <p>3명, 프론트40%  백앤드 70%</p>
                   </div>
                   <div>
                     <h6>Role / Contributions</h6>
-                    <p>레이아웃 구성</p>
-                    <p>페이지 일부 인터렉션 구현</p>
-                    <p>무한 애니메이션 구현</p>
+                    <p>로그인 연동 구현 &#40;카카오 로그인 포함&#41;</p>
+                    <p>CRUD 기능 개발 &#40;2명 공동 진행&#41;</p>
+                    <p>UI/UX 디자인 참여 및 화면 구성</p>
+                    <p>Firebase를 활용한 데이터 관리 및 연동</p>
                   </div>
                   <div>
                     <h6>Tech Stack</h6>
