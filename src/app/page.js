@@ -363,7 +363,7 @@ export default function Home() {
                 </div>
               ))
             ) : (
-              <div className='project-card'>
+              <div className='project-card-personal'>
                 <p>Personal Projects are coming soon...</p>
               </div>
             )}
