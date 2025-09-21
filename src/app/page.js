@@ -30,7 +30,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Ha-im/Renewal_project_Nestle",
       site: "https://timcho19.github.io/Renewal_project_Nestle/?authuser=0",
-      imageUrl : "https://picsum.photos/300/400?random=1"
+      imageUrl : "https://profile-park.vercel.app/image/nestle-image.png"
     },
     {
       title: "CGV Renewal",
@@ -41,7 +41,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "Jquery", "PHP", "MySQL"],
       github: "https://github.com/Ha-im/Renewal_project_Cgv",
       site: "http://gungsun1.dothome.co.kr/Renewal_project_Cgv/",
-      imageUrl : "https://picsum.photos/300/400?random=1"
+      imageUrl : "https://profile-park.vercel.app/image/cgv-image.png"
     },
     {
       title: "Wandoo Community",
@@ -52,7 +52,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Ha-im/wandoo-project",
       site: "https://wandoo-project.vercel.app/",
-      imageUrl : "/image/wandoo-image.png"
+      imageUrl : "https://profile-park.vercel.app/image/wandoo-image.png"
     },
   ];
   const filteredProjects = projects.filter(project => {
