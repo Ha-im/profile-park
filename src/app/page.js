@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from "react";
-import nestleImage from '/public/image/nestle-image.png';
-import cgvImage from '/public/image/cgv-image.png'; 
-import wandooImage from '/public/image/wandoo-image.png';
+import nestleImage from '/image/nestle-image.png';
+import cgvImage from '/image/cgv-image.png'; 
+import wandooImage from '/image/wandoo-image.png';
 
 export default function Home() {
   const texts = ["React", "Next.js", "Supabase", "Node.js", "Wordpress", "Figma", "Git", "Firebase", "Vue.js", "Vite", "Bootstrap", "Apache", "MySQL", "PHP", "Jquery", "HTML", "CSS", "JavaScript"]; // 타이핑할 스택
