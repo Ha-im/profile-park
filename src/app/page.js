@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from "react";
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
   const texts = ["React", "Next.js", "Supabase", "Node.js", "Wordpress", "Figma", "Git", "Firebase", "Vue.js", "Vite", "Bootstrap", "Apache", "MySQL", "PHP", "Jquery", "HTML", "CSS", "JavaScript"]; // 타이핑할 스택
@@ -124,6 +125,25 @@ export default function Home() {
   }, []);
   return (
     <>
+    <NextSeo
+        title="박경선 | 프론트엔드 개발자"
+        description="사용자 중심의 웹 경험을 만들어가는 프론트엔드 개발자 박경선의 포트폴리오입니다."
+        canonical="https://profile-park.vercel.app/"
+        openGraph={{
+          url: 'https://profile-park.vercel.app/',
+          title: '박경선 | 프론트엔드 개발자',
+          description: '사용자 중심의 웹 경험을 만들어가는 프론트엔드 개발자 박경선의 포트폴리오입니다.',
+          images: [
+            {
+              url: 'https://profile-park.vercel.app/image/profile-thumbnail.png',
+              width: 800,
+              height: 600,
+              alt: '박경선 포트폴리오'
+            }
+          ],
+          site_name: '박경선 포트폴리오',
+        }}
+      />
       <header>
         <h1 className="name">kyeongseon Park</h1>
         <ul>
