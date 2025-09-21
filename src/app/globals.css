@@ -222,15 +222,15 @@ justify-content: space-between;
 }
 
 .project-card:first-child:hover::before {
-  background-image: url('https://profile-park.vercel.app//image/nestle-image.png');
+  background-image: url('https://profile-park.vercel.app/image/nestle-image.png');
   opacity: 0.2;      
 }
 .project-card:nth-child(2):hover::before {
-  background-image: url('https://profile-park.vercel.app//image/cgv-image.png');
+  background-image: url('https://profile-park.vercel.app/image/cgv-image.png');
   opacity: 0.3;       
 }
 .project-card:last-child:hover::before {
-  background-image: url('https://profile-park.vercel.app//image/wandoo-image.png'); 
+  background-image: url('https://profile-park.vercel.app/image/wandoo-image.png'); 
   opacity: 0.2;      
 }
 
