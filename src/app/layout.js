@@ -21,7 +21,7 @@ export const metadata = {
     url: "https://profile-park.vercel.app/",
     images: [
       {
-        url: "https://profile-park.vercel.app/image/profile-thumbnail.png",
+        url: "https://profile-park.vercel.app/image/park.png",
         width: 800,
         height: 600,
         alt: "박경선 포트폴리오",
