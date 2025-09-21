@@ -333,12 +333,12 @@ export default function Home() {
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project, idx) => (
                 <div className="project-card" key={idx}
-                  style={{
-                    backgroundImage: `url(${project.imageUrl})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    transition: 'opacity 0.3s'
+                style={{
+                    '--hover-bg': `url(${project.imageUrl})`,
+                    '--hover-opacity': 0
                   }}
+                  onMouseEnter={(e) => e.currentTarget.style.setProperty('--hover-opacity', 0.2)}
+                  onMouseLeave={(e) => e.currentTarget.style.setProperty('--hover-opacity', 0)}
                  >
                   <div>
                     <h5 className="project-card-title">{project.title}</h5>
