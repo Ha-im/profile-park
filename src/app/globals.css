@@ -192,9 +192,9 @@ justify-content: space-between;
   flex-direction: column;
   text-align: center;
 
-  position: relative; /* ::before 위치를 위한 설정 */
-  overflow: hidden;   /* 이미지가 밖으로 나가지 않도록 */
-  color: #eaeaea;   /* 텍스트 색상 */
+  position: relative;
+  overflow: hidden;   
+  color: #eaeaea;   
   transition: transform 0.3s ease;
 }
 .project-card-personal{
@@ -220,20 +220,9 @@ justify-content: space-between;
   border-radius: 20px; 
   z-index: 0;      
 }
-
-.project-card:first-child:hover::before {
-  background-image: url('https://profile-park.vercel.app/image/nestle-image.png');
-  opacity: 0.2;      
+.project-card:hover::before {
+  opacity: 0.2;
 }
-.project-card:nth-child(2):hover::before {
-  background-image: url('https://profile-park.vercel.app/image/cgv-image.png');
-  opacity: 0.3;       
-}
-.project-card:last-child:hover::before {
-  background-image: url('https://profile-park.vercel.app/image/wandoo-image.png'); 
-  opacity: 0.2;      
-}
-
 .project-card > * {
   position: relative;
   z-index: 1;        

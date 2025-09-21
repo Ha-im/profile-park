@@ -30,6 +30,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Ha-im/Renewal_project_Nestle",
       site: "https://timcho19.github.io/Renewal_project_Nestle/?authuser=0",
+      imageUrl : "https://profile-park.vercel.app/image/nestle-image.png"
     },
     {
       title: "CGV Renewal",
@@ -40,6 +41,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "Jquery", "PHP", "MySQL"],
       github: "https://github.com/Ha-im/Renewal_project_Cgv",
       site: "http://gungsun1.dothome.co.kr/Renewal_project_Cgv/",
+      imageUrl : "https://profile-park.vercel.app/image/cgv-image.png"
     },
     {
       title: "Wandoo Community",
@@ -50,6 +52,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Ha-im/wandoo-project",
       site: "https://wandoo-project.vercel.app/",
+      imageUrl : "https://profile-park.vercel.app/image/wandoo-image.png"
     },
     // 개인 프로젝트는 아직 준비중
   ];
@@ -329,7 +332,14 @@ export default function Home() {
           <div className="project-cards">
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project, idx) => (
-                <div className="project-card" key={idx}>
+                <div className="project-card" key={idx}
+                  style={{
+                    backgroundImage: `url(${project.imageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    transition: 'opacity 0.3s'
+                  }}
+                 >
                   <div>
                     <h5 className="project-card-title">{project.title}</h5>
                     <p dangerouslySetInnerHTML={{ __html: project.description }} />
