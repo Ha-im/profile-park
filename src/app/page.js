@@ -2,9 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from "react";
-import nestleImage from '/image/nestle-image.png';
-import cgvImage from '/image/cgv-image.png'; 
-import wandooImage from '/image/wandoo-image.png';
 
 export default function Home() {
   const texts = ["React", "Next.js", "Supabase", "Node.js", "Wordpress", "Figma", "Git", "Firebase", "Vue.js", "Vite", "Bootstrap", "Apache", "MySQL", "PHP", "Jquery", "HTML", "CSS", "JavaScript"]; // 타이핑할 스택
@@ -33,7 +30,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Ha-im/Renewal_project_Nestle",
       site: "https://timcho19.github.io/Renewal_project_Nestle/?authuser=0",
-       imageUrl: nestleImage.src || nestleImage
+       imageUrl: "https://profile-park.vercel.app//image/nestle-image.png"
     },
     {
       title: "CGV Renewal",
@@ -44,7 +41,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "Jquery", "PHP", "MySQL"],
       github: "https://github.com/Ha-im/Renewal_project_Cgv",
       site: "http://gungsun1.dothome.co.kr/Renewal_project_Cgv/",
-      imageUrl: cgvImage.src || cgvImage
+      imageUrl:"https://profile-park.vercel.app//image/cgv-image.png"
     },
     {
       title: "Wandoo Community",
@@ -55,7 +52,7 @@ export default function Home() {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Ha-im/wandoo-project",
       site: "https://wandoo-project.vercel.app/",
-      imageUrl: wandooImage.src || wandooImage
+      imageUrl:"https://profile-park.vercel.app//image/wandoo-image.png"
     },
   ];
   const filteredProjects = projects.filter(project => {
