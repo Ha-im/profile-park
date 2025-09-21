@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from "react";
-import { NextSeo } from 'next-seo';
 import dynamic from "next/dynamic";
 
+const NextSeo = dynamic(() => import("next-seo").then(mod => mod.NextSeo), { ssr: false });
+
 export default function Home() {
-  const NextSeo = dynamic(() => import("next-seo").then(mod => mod.NextSeo), { ssr: false });
   const texts = ["React", "Next.js", "Supabase", "Node.js", "Wordpress", "Figma", "Git", "Firebase", "Vue.js", "Vite", "Bootstrap", "Apache", "MySQL", "PHP", "Jquery", "HTML", "CSS", "JavaScript"]; // 타이핑할 스택
   const speed = 100; // 글자당 지연(ms)
   const pause = 1000; // 한 단어 끝난 후 대기(ms)
