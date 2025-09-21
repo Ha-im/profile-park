@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from "react";
-import Head from 'next/head';
 
 export default function Home() {
   const texts = ["React", "Next.js", "Supabase", "Node.js", "Wordpress", "Figma", "Git", "Firebase", "Vue.js", "Vite", "Bootstrap", "Apache", "MySQL", "PHP", "Jquery", "HTML", "CSS", "JavaScript"]; // 타이핑할 스택
@@ -125,21 +124,6 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Head>
-        <title>박경선 | 프론트엔드 개발자</title>
-        <meta name="description" content="사용자 중심의 웹 경험을 만들어가는 프론트엔드 개발자 박경선의 포트폴리오입니다." />
-        <link rel="canonical" href="https://profile-park.vercel.app/" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="박경선 | 프론트엔드 개발자" />
-        <meta property="og:description" content="사용자 중심의 웹 경험을 만들어가는 프론트엔드 개발자 박경선의 포트폴리오입니다." />
-        <meta property="og:url" content="https://profile-park.vercel.app/" />
-        <meta property="og:image" content="https://profile-park.vercel.app/image/profile-thumbnail.png" />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="600" />
-        <meta property="og:image:alt" content="박경선 포트폴리오" />
-        <meta property="og:site_name" content="박경선 포트폴리오" />
-      </Head>
       <header>
         <h1 className="name">kyeongseon Park</h1>
         <ul>
