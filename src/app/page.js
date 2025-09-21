@@ -333,12 +333,7 @@ export default function Home() {
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project, idx) => (
                 <div className="project-card" key={idx}
-                  style={{
-                    '--hover-bg': `url(${project.imageUrl})`, // url() 포함하고 변수명 맞춤
-                    '--hover-opacity': 0
-                  }}
-                  onMouseEnter={(e) => e.currentTarget.style.setProperty('--hover-opacity', 0.2)}
-                  onMouseLeave={(e) => e.currentTarget.style.setProperty('--hover-opacity', 0)}
+                  style={{ '--hover-bg': `url(${project.imageUrl})` }}
                  >
                   <div>
                     <h5 className="project-card-title">{project.title}</h5>
