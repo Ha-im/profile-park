@@ -7,7 +7,7 @@ export default function Home() {
   const texts = ["React", "Next.js", "Supabase", "Node.js", "Wordpress", "Figma", "Git", "Firebase", "Vue.js", "Vite", "Bootstrap", "Apache", "MySQL", "PHP", "Jquery", "HTML", "CSS", "JavaScript"]; // 타이핑할 스택
   const speed = 100; // 글자당 지연(ms)
   const pause = 1000; // 한 단어 끝난 후 대기(ms)
-
+  const [isOpen, setIsOpen] = useState(false); // 메뉴
   const [index, setIndex] = useState(0);       // 현재 텍스트 인덱스
   const [charIndex, setCharIndex] = useState(0); // 글자 인덱스
   const [display, setDisplay] = useState("");   // 화면에 보이는 텍스트
@@ -126,9 +126,11 @@ export default function Home() {
   }, []);
   return (
     <>
-      <header>
+      <header className="header">
         <h1 className="name">kyeongseon Park</h1>
-        <ul>
+
+        {/* 메뉴 */}
+        <ul className={`menu ${isOpen ? "open" : ""}`}>
           <li><Link href="/">HOME</Link></li>
           <li><Link href="#about">ABOUT ME</Link></li>
           <li><Link href="#skills">SKILLS</Link></li>
@@ -136,6 +138,11 @@ export default function Home() {
           <li><Link href="#interview">INTERVIEW</Link></li>
           <li><Link href="#contact">CONTACT</Link></li>
         </ul>
+
+        {/* 햄버거 버튼 */}
+        <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          <Image src="image/menu.svg" alt="Menu" width={30} height={30} />
+        </button>
       </header>
       <div className="container">
         {/* Home */}
