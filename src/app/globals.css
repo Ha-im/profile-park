@@ -228,8 +228,31 @@ justify-content: space-between;
   z-index: 0;      
 }
 
+.project-card::before {
+  transition: opacity 0.3s ease; /* 부드러운 전환 추가 */
+}
+
 .project-card:hover::before {
-  opacity: 0.2;
+  opacity: 0.8; /* 0.8에서 0.3으로 줄여서 덜 어둡게 */
+}
+
+
+
+.project-card:hover > div:nth-child(-n+4) {
+  display:none
+}
+
+.project-card .git-link {
+  transition: all 0.3s ease; /* 부드러운 전환 추가 */
+}
+
+.project-card:hover .git-link {
+  display:flex;
+  gap:12px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.95); /* 검정에서 흰색으로 변경 */
+  border-radius: 12px; /* 20px에서 12px로 줄임 */
+  backdrop-filter: blur(10px); /* 블러 효과 추가 */
 }
 .project-card > * {
   position: relative;
