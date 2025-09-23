@@ -206,8 +206,13 @@ margin-bottom:100px;
 .skills .badges{
   justify-content: center;
 }
-/* data-rate */
-
+.skill-hint{
+  text-align: center;
+  font-size:0.8rem;
+  color:#adb5bd;
+   margin-bottom: 8px;
+  font-style: italic;
+}
 /* project */
 .project{
 margin-bottom:100px;

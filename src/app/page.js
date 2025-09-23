@@ -238,6 +238,7 @@ export default function Home() {
           <h2 className="skills-title">Skills</h2>
           <div>
             <h3 className='current-skills'>Current Skills</h3>
+            <p className="skill-hint">Hover over a skill to see your proficiency</p>
             <div className="badges">
               <div style={{ '--rate': '75%' }}  data-rate="75%">
                 <Image src="/image/html5.svg" alt="HEML5 Logo" width={24} height={24} />
