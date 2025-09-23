@@ -2,12 +2,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from "react";
+import emailjs from '@emailjs/browser';
+
 
 export default function Home() {
   const texts = ["React", "Next.js", "Supabase", "Node.js", "Wordpress", "Figma", "Git", "Firebase", "Vue.js", "Vite", "Bootstrap", "Apache", "MySQL", "PHP", "Jquery", "HTML", "CSS", "JavaScript"]; // 타이핑할 스택
   const speed = 100; // 글자당 지연(ms)
   const pause = 1000; // 한 단어 끝난 후 대기(ms)
   const [isOpen, setIsOpen] = useState(false); // 메뉴
+  const [ismodal,setIsModal] = useState(false) // 메일 모달
   const [index, setIndex] = useState(0);       // 현재 텍스트 인덱스
   const [charIndex, setCharIndex] = useState(0); // 글자 인덱스
   const [display, setDisplay] = useState("");   // 화면에 보이는 텍스트
@@ -61,6 +64,18 @@ export default function Home() {
     if (activeTab === "personal") return project.type === "personal";
     return false;
   });
+
+  /* mail modal */
+  const sendMail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_lu54px1', 'template_0uudx84', e.target, 'uhyMNc1F_5GbcIwZV')
+      .then((result) => {
+          alert("메일이 전송되었습니다!");
+          setIsModal(false);
+      }, (error) => {
+          alert("메일 전송 실패: " + error.text);
+      });
+  };
 
   /* arrow */
   const [showArrow, setShowArrow] = useState(true);
@@ -453,7 +468,9 @@ export default function Home() {
       </footer>
       <div className='action-buttons'>
         <div className='mail-color-black-btn'>
-          <button onClick={() => window.location.href = 'mailto:gungsun1@naver.com'}><Image src="/image/mail-color-black.svg" alt="" width={24} height={24} /></button>
+          <button onClick={() => setIsModal(true)}>
+            <Image src="/image/mail-color-black.svg" alt="" width={24} height={24} />
+          </button>
         </div>
         <div className='feedback-btn'>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzvwLwqIxIugCrg3-pkas3AWLcG-mO6p2pZ28FQ7-ud_TrDQ/viewform?usp=header" target="_blank"><Image src="/image/feedback.svg" alt="" width={24} height={24} /></a>
@@ -462,6 +479,20 @@ export default function Home() {
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Image src="/image/arrow_upward.svg" alt="" width={24} height={24} /></button>
         </div>
       </div>
+      {ismodal && (
+          <div className="modal">
+            <div className="modal-content">
+              <h2>메일 보내기</h2>
+              <form onSubmit={sendMail}>
+                <input type="text" name="name" placeholder="이름" required/>
+                <input type="email" name="email" placeholder='보내는분의 이메일'required/>
+                <textarea name="message" placeholder="메시지" required/>
+                <button type="submit">보내기</button>
+                <button type="button" onClick={() => setIsModal(false)}>취소</button>
+              </form>
+            </div>
+          </div>
+        )}
     </>
 
   );

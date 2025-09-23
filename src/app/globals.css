@@ -764,6 +764,161 @@ p {
   align-items: center;
   justify-content: center;
 }
+/* mail modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  animation: modalFadeIn 0.3s ease;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 8px 24px rgba(0, 0, 0, 0.08);
+  animation: modalSlideIn 0.3s ease;
+}
+
+/* 제목 스타일 */
+.modal h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #212529;
+  text-align: center;
+}
+
+/* 폼 스타일 */
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 입력 필드 스타일 */
+.modal input[type="text"],
+.modal input[type="email"],
+.modal textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #495057;
+  background: white;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.modal input[type="text"]:focus,
+.modal input[type="email"]:focus,
+.modal textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: #adb5bd;
+}
+
+/* 텍스트에리어 특별 스타일 */
+.modal textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+/* 버튼 기본 스타일 */
+.modal button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  width: 100%;
+}
+
+/* 보내기 버튼 (주 버튼) */
+.modal button[type="submit"] {
+  background: #007bff;
+  color: white;
+}
+
+.modal button[type="submit"]:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.modal button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* 취소 버튼 (보조 버튼) */
+.modal button[type="button"] {
+  background: #f8f9fa;
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+  margin-bottom: 0;
+}
+
+.modal button[type="button"]:hover {
+  background: #e9ecef;
+  color: #495057;
+}
+
+/* 버튼을 나란히 배치하고 싶을 때 */
+.modal .button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.modal .button-group button {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* 애니메이션 */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 /* 대형 데스크톱 */
 @media (min-width: 1440px) {
@@ -1099,6 +1254,28 @@ p {
     background: none;
     border: none;
     cursor: pointer;
+  }
+}
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 24px 20px;
+    margin: 20px;
+    border-radius: 12px;
+  }
+  
+  .modal h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .modal form {
+    gap: 16px;
+  }
+  
+  .modal input[type="text"],
+  .modal input[type="email"],
+  .modal textarea {
+    padding: 12px 14px;
   }
 }
 /* 초소형 모바일 */
