@@ -990,6 +990,15 @@ p {
   }
 }
 
+/* 모바일 줄바꿈 */
+.responsive-text {
+  white-space: pre-wrap;  
+  word-break: break-word; 
+}
+.role-description {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
 
 /* 대형 데스크톱 */
 @media (min-width: 1440px) {

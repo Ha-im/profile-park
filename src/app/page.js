@@ -64,7 +64,7 @@ export default function Home() {
     if (activeTab === "personal") return project.type === "personal";
     return false;
   });
-
+  
   /* mail modal */
   const sendMail = (e) => {
     e.preventDefault();
@@ -76,6 +76,15 @@ export default function Home() {
           alert("메일 전송 실패: " + error.text);
       });
   };
+  /* mobile br */
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile(); // 초기값
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   /* arrow */
   const [showArrow, setShowArrow] = useState(true);
@@ -166,7 +175,7 @@ export default function Home() {
             <div className="title">
               <h2>Hello, i&#44;m</h2>
               <h3>Kyeoungseon</h3>
-              <h4><span className='title-sub'>&quot;배우는 것을 두려워하지 않는&quot;</span> 신입 프론트엔드 개발자입니다.<br />매일 조금씩 더 나은 코드를 작성하기 위해 노력하고 있습니다.</h4>
+              <h4><span className='title-sub'>&quot;배우는 것을 두려워하지 않는&quot;</span>{isMobile && <br />} 신입 프론트엔드 개발자입니다.<br />매일 조금씩 더 나은 코드를 작성하기 위해 {isMobile && <br />}노력하고 있습니다.</h4>
             </div>
             <div className='text'>
               <div>{display}<span className="cursor">|</span></div>
@@ -183,7 +192,7 @@ export default function Home() {
             <h2 className="about-title">About Me</h2>
             <div className='about-role'>
               <h4 className='role-title'>Frontend Developer</h4>
-              <p className="role-description">프론트엔드 개발의 기초부터 최신 프레임워크까지 체계적으로 학습해온 예비 개발자입니다.<br />배운 지식을 실무에 적용하며 사용자 중심의 웹 경험을 만들어가고 싶습니다.</p>
+              <p className="role-description">프론트엔드 개발의 기초부터 최신 프레임워크까지 {isMobile && <br />}체계적으로 학습해온 예비 개발자입니다.<br />배운 지식을 실무에 적용하며 사용자 중심의 웹 경험을 만들어가고 싶습니다.</p>
             </div>
             <div className='badges'>
               <div>
@@ -222,14 +231,15 @@ export default function Home() {
           </div>
           <div>
             <h4 className='Strengths'>Core Strengths</h4>
-            <p><span>Team Collaboration:</span>소통과 협업을 중시하며, 팀 프로젝트에서 원활한 진행을 돕습니다.</p>
-            <p><span>Persistence:</span>어려운 문제도 끝까지 해결하려는 끈기를 가지고 있습니다.</p>
-            <p><span>Adaptability:</span>새로운 환경과 기술에 빠르게 적응해 업무에 적용합니다.</p>
-            <p><span>Continuous Learning:</span>최신 기술을 꾸준히 배우고 성장하려는 열정을 가지고 있습니다.</p>
+
+            <p><span>Team Collaboration:</span>{isMobile && <br />}소통과 협업을   중시하며, 팀 프로젝트에서 원활한 진행을 돕습니다.</p>
+            <p><span>Persistence:</span>{isMobile && <br />}어려운 문제도 끝까지 해결하려는 끈기를 가지고 있습니다.</p>
+            <p><span>Adaptability:</span>{isMobile && <br />}새로운 환경과 기술에 빠르게 적응해 업무에 적용합니다.</p>
+            <p><span>Continuous Learning:</span>{isMobile && <br />}최신 기술을 꾸준히 배우고 성장하려는 열정을 가지고 있습니다.</p>
           </div>
           <div>
             <h4 className='Philosophy'>Work Philosophy</h4>
-            <p>제가 경험한 사회생활은 항상 팀 단위로 진행되었으며, 협업과 원활한 소통의 중요성을 깊이 깨달았습니다. 어려운 문제 앞에서도 포기하지 않고 끝까지 해결하는 끈기와 새로운 환경에 빠르게 적응하는 유연성을 길렀습니다. 이를 바탕으로, 사용자 중심의 웹 경험을 만드는 개발자가 되고자 합니다.</p>
+            <p>제가 경험한 사회생활은 항상 팀 단위로 진행되었으며,{isMobile && <br />} 협업과 원활한 소통의 중요성을 깊이 깨달았습니다.{isMobile && <br />} 어려운 문제 앞에서도 포기하지 않고 끝까지 해결하는 끈기와{isMobile && <br />} 새로운 환경에 빠르게 적응하는 유연성을 길렀습니다. {isMobile && <br />}이를 바탕으로, 사용자 중심의 웹 경험을 만드는 개발자가 되고자 합니다.</p>
           </div>
         </div>
 
@@ -403,14 +413,14 @@ export default function Home() {
             <h3>Q. 프론트엔드를 시작하게 된 계기는 무엇인가요?</h3>
           </div>
           <div className='interview-qna'>
-            <p>친구를 통해 프론트엔드를 알게 되었고, 흥미를 느꼇지만 늦었다고 생각해 미루고 있었습니다. <br /> <span>하지만 계속 후회할 것 같다는 생각에, 더 늦기 전에 시작하자는 마음으로 도전하게 되었습니다.</span></p>
+            <p>친구를 통해 프론트엔드를 알게 되었고,{isMobile && <br />} 흥미를 느꼇지만 늦었다고 생각해 미루고 있었습니다. <br /> <span>하지만 계속 후회할 것 같다는 생각에, {isMobile && <br />}더 늦기 전에 시작하자는 마음으로 도전하게 되었습니다.</span></p>
           </div>
           <div className='qna'>
             <h3>Q. 개발자로서 본인의 강점은 무엇인가요?</h3>
           </div>
           <div className='interview-qna'>
             <p>저의 강점은 끈기와 꾸준한 노력입니다.<br />
-              <span>문제를 해결하며 배우는 과정에서 즐거움을 느끼고, 이를 통해 지속적으로 성장해 나가고 있습니다.</span></p>
+              <span>문제를 해결하며 배우는 과정에서 즐거움을 느끼고,{isMobile && <br />} 이를 통해 지속적으로 성장해 나가고 있습니다.</span></p>
           </div>
           <div className='qna'>
             <h3>Q. 문제를 해결할 때 가장 중요하게 생각하는 것은 무엇인가요?</h3>
