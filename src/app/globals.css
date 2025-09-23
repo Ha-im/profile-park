@@ -135,13 +135,15 @@ header ul li a:hover {
   flex: 0 0 auto;
 }
 .badges div{
-  padding:12px;
-  background:#2B2B2B;
+  position: relative;     
+  padding: 12px;
+  background: #2B2B2B;
   border: 1px #d9d9d9 solid;
   border-radius: 20px;
-  display:flex;
+  display: flex;
   align-items: center;
-  gap:6px;
+  gap: 6px;
+  overflow: hidden;      
 }
 
 .role-title,.Strengths,.Philosophy{
@@ -154,7 +156,39 @@ header ul li a:hover {
 .about-role{
   margin-bottom:24px;
 }
+/* badges progressbar */
+.badges > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0;              
+  background: #2D8F14;  
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
 
+.badges > div:hover::before {
+  width: var(--rate);  
+}
+/* 퍼센트 숫자 */
+.badges > div::after {
+  content: attr(data-rate);  
+  position: absolute;
+  top: 50%;                 
+  left: 12px;               
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;                
+  transition: opacity 0.3s;
+}
+
+.badges > div:hover::after {
+  opacity: 1;               
+}
 
 /* skills */
 .skills{
@@ -172,6 +206,8 @@ margin-bottom:100px;
 .skills .badges{
   justify-content: center;
 }
+/* data-rate */
+
 /* project */
 .project{
 margin-bottom:100px;

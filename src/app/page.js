@@ -239,31 +239,31 @@ export default function Home() {
           <div>
             <h3 className='current-skills'>Current Skills</h3>
             <div className="badges">
-              <div>
+              <div style={{ '--rate': '75%' }}  data-rate="75%">
                 <Image src="/image/html5.svg" alt="HEML5 Logo" width={24} height={24} />
                 <p>HEML5</p>
               </div>
-              <div>
+              <div style={{ '--rate': '75%' }}  data-rate="75%">
                 <Image src="/image/css.svg" alt="CSS Logo" width={24} height={24} />
                 <p>CSS</p>
               </div>
-              <div>
+              <div style={{ '--rate': '65%' }}  data-rate="65%">
                 <Image src="/image/javascript.svg" alt="JavaScript Logo" width={24} height={24} />
                 <p>JavaScript</p>
               </div>
-              <div>
+              <div style={{ '--rate': '60%' }}  data-rate="60%">
                 <Image src="/image/react-1.svg" alt="React Logo" width={24} height={24} />
                 <p>React</p>
               </div>
-              <div>
+              <div style={{ '--rate': '60%' }}  data-rate="60%">
                 <Image src="/image/vite.svg" alt="Vite Logo" width={24} height={24} />
                 <p>Vite</p>
               </div>
-              <div>
+              <div style={{ '--rate': '70%' }}  data-rate="70%">
                 <Image src="/image/jquery.svg" alt="Vite Logo" width={24} height={24} />
                 <p>Jquery</p>
               </div>
-              <div>
+              <div style={{ '--rate': '60%' }}  data-rate="60%">
                 <Image src="/image/git.svg" alt="React Logo" width={24} height={24} />
                 <p>Git/GitHub</p>
               </div>
