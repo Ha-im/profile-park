@@ -556,7 +556,6 @@ header ul li a:hover {
 }
 
 .badges {
-  cursor: pointer;
   padding: 12px;
   border-radius: 20px;
   display: flex;
