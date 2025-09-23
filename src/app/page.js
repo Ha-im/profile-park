@@ -449,10 +449,10 @@ export default function Home() {
               </Link>
             </div>
             <div className='contact-item'>
-              <a href='mailto:gungsun1@naver.com' >
+              <button onClick={() => setIsModal(true)}>
                 <Image src="/image/mail.svg" alt="메일 아이콘" width={24} height={24} />
                 <p>Email</p>
-              </a>
+              </button>
             </div>
             <div className='contact-item'>
               <Link href='https://preschool.tistory.com/' target='_blank'>
