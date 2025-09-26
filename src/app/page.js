@@ -386,13 +386,13 @@ export default function Home() {
                   <div className="git-link">
                     <div>
                       <Link href={project.github} target="_blank">
-                        <Image src="/image/github.svg" alt="" width={24} height={24} />
+                        <Image src="/image/github.svg" alt="Github Logo" width={24} height={24} />
                         <p>GitHub</p>
                       </Link>
                     </div>
                     <div>
                       <Link href={project.site} target="_blank">
-                        <Image src="/image/open-in-new.svg" alt="" width={24} height={24} />
+                        <Image src="/image/open-in-new.svg" alt="site" width={24} height={24} />
                         <p>Site</p>
                       </Link>
                     </div>
