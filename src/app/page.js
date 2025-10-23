@@ -42,7 +42,7 @@ export default function Home() {
       teamInfo: "3명, 프론트 40% 백앤드 100%",
       role: ["로그인 기능 연동 및 사용자 인증 구현", "관리자 페이지 제작", "영화 데이터 처리 및 출력 기능 개발"],
       tech: ["HTML", "CSS", "Jquery", "PHP", "MySQL"],
-      github: "https://github.com/Ha-im/Renewal_project_Cgv",
+      github: "https://github.com/Ha-im/Renewal_project_Cgv/tree/main_php",
       site: "http://gungsun1.dothome.co.kr/Renewal_project_Cgv/",
       imageUrl:"https://profile-park.vercel.app//image/cgv.jpg"
     },
