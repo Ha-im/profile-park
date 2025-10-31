@@ -173,7 +173,7 @@ export default function Home() {
         <div className="home">
           <div className='home-sub'>
             <div className="title">
-              <h2>Hello, i&#44;m</h2>
+              <h2>Hello, I&apos;m</h2>
               <h3>Kyeoungseon</h3>
               <h4><span className='title-sub'>&quot;배우는 것을 두려워하지 않는&quot;</span>{isMobile && <br />} 신입 프론트엔드 개발자입니다.<br />매일 조금씩 더 나은 코드를 작성하기 위해 {isMobile && <br />}노력하고 있습니다.</h4>
             </div>
